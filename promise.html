@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body style="color: #ffffff; background-color: #0d1117;">
+    <h1>Promise in JavaScript</h1>
+
+    <script>
+        let promise = new Promise((resolve, reject) => {
+            console.log("I am a promise");
+            setTimeout(() => {
+                // resolve("Success");
+                reject("Error: Something went wrong!");
+            }, 5000);
+        });
+
+        // To see the pending state on the browser console type promise.
+        // At first it gives you pending state then after 5 seconds it gives you resolve or rejected as per the code.
+
+
+    </script>
+</body>
+</html>
